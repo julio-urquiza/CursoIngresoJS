@@ -9,9 +9,59 @@ function mostrar()
 	let lugar;
 	let estacion;
 	let juntos;
+	let precio;
+	const BASE =15000;
+	let porcentaje;
 	
 	lugar = document.getElementById("txtIdDestino").value;
 	estacion = document.getElementById("txtIdEstacion").value;
+	
+	switch(estacion)
+	{
+		case "Invierno":
+			if (lugar=="Bariloche")
+			{
+				porcentaje= 1.2;
+			}
+			else if(lugar=="Cataratas"||lugar=="Cordoba")
+			{
+				porcentaje=.9;
+			}
+			else
+			{
+				porcentaje=.8;
+			}
+			break;
+		case "Verano":
+			if (lugar=="Bariloche")
+			{
+				porcentaje= .8;
+			}
+			else if(lugar=="Cataratas"||lugar=="Cordoba")
+			{
+				porcentaje=1.1;
+			}
+			else
+			{
+				porcentaje=1.2;
+			}
+			break;
+		case "Otoño":
+		case "Primavera":
+			if (lugar=="Cordoba")
+			{
+				porcentaje=1;
+			}
+			else
+			{
+				porcentaje= 1.1;
+			}
+			break;
+	}
+	precio=BASE*porcentaje;
+	alert(precio);
+	
+	/*
 	juntos = lugar +"_"+estacion;
 
 	switch(juntos)
@@ -45,5 +95,6 @@ function mostrar()
 
 
 	}
+	*/
 	
 }//FIN DE LA FUNCIÓN

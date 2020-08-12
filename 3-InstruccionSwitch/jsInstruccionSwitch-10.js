@@ -29,7 +29,7 @@ function mostrar()
 		case "Bariloche_Otoño":
 		case "Mar del plata_Otoño":
 		case "Bariloche_Primavera":
-			alert("si se viaja")
+			alert("si se viaja");
 			break;
 		case "Cataratas_Invierno":
 		case "Cordoba_Invierno":
@@ -39,7 +39,7 @@ function mostrar()
 		case "Mar del plata_Invierno":	
 		case "Bariloche_Verano":
 		case "Cordoba_Primavera":
-			alert("no se viaja")
+			alert("no se viaja");
 			break;
 	}
 

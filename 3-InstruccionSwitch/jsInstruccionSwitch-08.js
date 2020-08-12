@@ -8,16 +8,12 @@ function mostrar()
 	switch(lugar)
 	{
 		case "Bariloche":
+		case "Ushuaia":
 			alert("ahì hace frio");
 			break;
 		case "Cataratas":
-			alert("ahì hace calor");
-			break;
 		case "Mar del plata":
 			alert("ahì hace calor");
-			break;
-		case "Ushuaia":
-			alert("ahì hace frio");
 			break;
 	}
 
